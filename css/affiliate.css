@@ -43,3 +43,9 @@
 .bears-purchaseref-wrap a.link-purchase-iu svg:last-child {
     height: 14px;
 }
+
+.bears-purchaseref-wrap.bt-utenzo {
+    left: 10px;
+    right: auto;
+    z-index: 99;
+}
