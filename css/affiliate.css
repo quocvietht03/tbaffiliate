@@ -59,7 +59,8 @@
     -webkit-box-shadow:-6.772px 8.668px 16px 0px rgba(28, 30, 35, 0.15);
     -moz-box-shadow:-6.772px 8.668px 16px 0px rgba(28, 30, 35, 0.15);
 }
-.bears-purchase-theme-btn:hover {
+.bears-purchase-theme-btn:hover,
+.bears-purchase-theme-btn:focus {
     color:#f8f8f8;
 }
 .bears-purchase-theme-btn .currency-symbol {
