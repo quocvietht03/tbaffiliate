@@ -3,6 +3,7 @@ $affiliate_enable = get_option('affiliate_enable');
 $affiliate_el_class = get_option('affiliate_el_class');
 $affiliate_link = get_option('affiliate_link');
 $affiliate_item_name = get_option('affiliate_item_name');
+$affiliate_item_price = get_option('affiliate_item_price');
 ?>
 <div class="settings_wrap">
 	<h2><?php _e('Settings','affiliate'); ?></h2>
@@ -26,6 +27,13 @@ $affiliate_item_name = get_option('affiliate_item_name');
 				<td><?php _e('Item Name','affiliate'); ?><td>
 				<td>
 					<input type="text" name="affiliate_item_name" value="<?php echo esc_attr($affiliate_item_name);?>"/>
+				<td>
+			</tr>
+
+			<tr>
+				<td><?php _e('Item Price','affiliate'); ?><td>
+				<td>
+					<input type="text" name="affiliate_item_price" value="<?php echo esc_attr($affiliate_item_price);?>"/>
 				<td>
 			</tr>
 			

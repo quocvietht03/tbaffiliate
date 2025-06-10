@@ -26,7 +26,7 @@ if ( !class_exists( 'AffiliatePageSetting' ) ) {
 		}
 	
 		function affiliate_register_plgsettings() {
-			$options = array( 'affiliate_enable','affiliate_el_class','affiliate_link','affiliate_item_name' );
+			$options = array( 'affiliate_enable','affiliate_el_class','affiliate_link','affiliate_item_name','affiliate_item_price' );
 			foreach( $options as $k=>$v ):
 				register_setting( 'affiliate-plugin-settings', $v );	
 			endforeach;

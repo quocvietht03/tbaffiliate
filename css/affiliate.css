@@ -1,51 +1,91 @@
-.bears-purchaseref-wrap {
-    bottom: 10px;
-    line-height: normal;
-    position: fixed;
-    right: 10px;
-    z-index: 999;
-}
-.bears-purchaseref-wrap a {
-    display: inline-block;
-    vertical-align: middle;
-}
-.bears-purchaseref-wrap a.link-contact-ui {
-    margin-right: 10px;
-    opacity: 0.4;
-}
-.bears-purchaseref-wrap a.link-contact-ui:hover {
-    opacity: 0.6;
-}
-.bears-purchaseref-wrap a.link-contact-ui img {
-    width: 41px;
-}
-.bears-purchaseref-wrap a.link-purchase-iu {
-    background: #111;
-    border-radius: 30px;
-    color: #fff;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 14px 18px;
-}
-.bears-purchaseref-wrap a.link-purchase-iu span {
-    color: #fff;
-    font-family: caption;
-    font-style: italic;
-    font-weight: 400;
-}
-.bears-purchaseref-wrap a.link-purchase-iu svg {
-    width: auto;
-    height: 16px;
-}
-.bears-purchaseref-wrap a.link-purchase-iu svg:last-child {
-    height: 14px;
+@-webkit-keyframes sk-scaleout {
+    0% { -webkit-transform: scale(0) }
+    100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+    }
 }
 
+@keyframes sk-scaleout {
+    0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+    }
+}
+
+.bears-purchaseref-wrap {
+    bottom: 80px;
+    display: inline-block;
+    position: fixed;
+    left: 170px;
+    z-index: 999;
+}
 .bears-purchaseref-wrap.bt-utenzo {
-    left: 10px;
-    right: auto;
     z-index: 99;
+}
+.bears-purchaseref-wrap:after {
+    content:'';
+    position:absolute;
+    width:110px;
+    height:110px;
+    background:#7cb442;
+    bottom:-18px;
+    right:-18px;
+    -webkit-animation:sk-scaleout 1.0s infinite ease-in-out;
+    animation:sk-scaleout 1.0s infinite ease-in-out;
+        border-radius: 50%;
+    z-index: -1;
+}
+.bears-purchase-theme-btn {
+    background-color: #729c29;
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 60px;
+    height: 70px;
+    position: absolute;
+    right: 0;
+    bottom:0;
+    width: 70px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    box-shadow:-6.772px 8.668px 16px 0px rgba(28, 30, 35, 0.15);
+    -webkit-box-shadow:-6.772px 8.668px 16px 0px rgba(28, 30, 35, 0.15);
+    -moz-box-shadow:-6.772px 8.668px 16px 0px rgba(28, 30, 35, 0.15);
+}
+.bears-purchase-theme-btn:hover {
+    color:#f8f8f8;
+}
+.bears-purchase-theme-btn .currency-symbol {
+    font-size: 16px;
+    vertical-align: super;
+    font-weight: normal;
+    margin-right: 3px;
+}
+.bears-purchase-theme-btn .envato-logo {
+    background: #7cb442;
+    border-radius: 50%;
+    bottom: -10px;
+    height: 40px;
+    position: absolute;
+    left: -24px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bears-purchase-theme-btn .envato-logo svg {
+    fill: currentColor;
+}
+
+@media(max-width: 1199.98px) {
+    .bears-purchaseref-wrap {
+        left: 110px;
+    }
 }
