@@ -90,3 +90,9 @@
         left: 110px;
     }
 }
+
+@media(max-width: 767.98px) {
+    .bears-purchaseref-wrap {
+        display: none !important;
+    }
+}
